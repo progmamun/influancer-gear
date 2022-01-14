@@ -1,0 +1,19 @@
+{
+  "name": "influancer-gear",
+  "version": "1.0.0",
+  "description": "assigment-02-milestone2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/progmamun/influancer-gear.git"
+  },
+  "author": "Al Mamun Khan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/progmamun/influancer-gear/issues"
+  },
+  "homepage": "https://github.com/progmamun/influancer-gear#readme"
+}
