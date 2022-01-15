@@ -21,6 +21,7 @@ html {
   --icon-color: #fb8200;
   --white-color: #fff;
   --white-color-dark: #787885;
+  --footer-bg-color: #0a0826;
 }
 body {
   font-family: 'Open Sans', sans-serif;
@@ -29,6 +30,5 @@ body {
   line-height: 1;
   color: var(--text-color);
   background-color: var(--background-color);
-  padding: 3rem;
   box-sizing: border-box;
 }
