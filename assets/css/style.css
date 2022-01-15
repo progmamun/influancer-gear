@@ -72,9 +72,7 @@ a {
 }
 .header__logo {
   position: relative;
-  width: 24.3rem;
   height: 5.22rem;
-  top: 8.7rem;
   left: 12rem;
   font-weight: 700;
   font-size: 2.4rem;
@@ -288,4 +286,22 @@ footer {
   font-size: 2.4rem;
   color: var(--white-color);
   margin: 2rem 1rem;
+}
+/* media query  */
+/* Mobile */
+@media only screen and (min-width: 480px) {
+  html {
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+}
+
+/* Desktop */
+@media only screen and (min-width: 992px) {
+}
+
+/* Huge */
+@media only screen and (min-width: 1280px) {
 }
