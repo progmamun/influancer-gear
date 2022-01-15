@@ -24,6 +24,7 @@ html {
   --footer-bg-color: #0a0826;
 }
 body {
+  width: 100%;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
@@ -31,4 +32,260 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   box-sizing: border-box;
+}
+h1 {
+  font-family: 'Raleway', sans-serif;
+}
+.row {
+  max-width: 114rem;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  padding-left: 6rem;
+}
+.col-1 {
+  width: 100%;
+}
+.col-2 {
+  width: 50%;
+}
+.col-3 {
+  width: 33.3%;
+}
+a {
+  text-decoration: none;
+  height: 2.4rem;
+  width: 9.9rem;
+  color: var(--btn-bg);
+}
+/*==============
+ heading start 
+ =============== */
+.header {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.header__logo-box {
+}
+.header__logo {
+  position: relative;
+  width: 24.3rem;
+  height: 5.22rem;
+  top: 8.7rem;
+  left: 12rem;
+  font-weight: 700;
+  font-size: 2.4rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.header__logo:hover {
+  animation: moveInRight 1s ease-out;
+}
+
+/* animation start */
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+/* animation end */
+/*=============
+ heading end 
+===============*/
+
+/*================ 
+main section start 
+================== */
+.container {
+}
+
+/* hero section start  */
+.hero {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.hero__text {
+  position: relative;
+  top: 10.5rem;
+  left: 9rem;
+}
+.hero__text h1 {
+  font-size: 5.2rem;
+  font-weight: 700;
+}
+.hero__text p {
+  font: 1.6rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 50%;
+}
+
+.hero__text a {
+  width: 19.6rem;
+  height: 4.4rem;
+  border-radius: 4.1rem;
+  padding: 1rem 2.4rem;
+  color: var(--white-color);
+  background-color: var(--btn-bg);
+}
+.hero__text a span {
+  margin-top: 0.5rem;
+}
+.hero__img {
+  background: url('/assets/img/Circle.svg');
+  /* right: -14rem; */
+}
+.hero__img img {
+  width: 44rem;
+  height: 41.4rem;
+  margin-top: 4rem;
+}
+.hero__img:hover {
+  animation: moveInRight 1s ease-out;
+}
+/* hero section end */
+
+/* band section start  */
+.band {
+  display: none;
+}
+.band__logo {
+}
+/* band section end */
+
+/* products section start  */
+.products {
+  margin-top: 4rem;
+}
+
+.products .products-heading {
+  display: grid;
+  grid-template-columns: auto;
+  position: relative;
+  font-size: 2.8rem;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+}
+
+.products__box {
+}
+
+.products__box-img {
+}
+.products_box-text {
+  position: relative;
+}
+.products_box-text h1 {
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: var(--text-color);
+  padding: 1.6rem 0;
+}
+p.prices {
+  font-size: 2.4rem;
+}
+p.rating {
+  font-size: 1rem;
+  padding: 1rem 0;
+}
+p.rating span {
+  color: var(--icon-color);
+}
+.product-disciption {
+  font-size: 1.4rem;
+  color: var(--white-color-dark);
+  font-weight: 700;
+}
+.btn-link {
+  display: flex;
+  justify-content: end;
+}
+.btn-link a {
+}
+/* products section end */
+
+/* featured products section start */
+.featured {
+  margin-top: 4rem;
+  margin: 0 10rem;
+}
+.featured__section {
+  display: flex;
+  flex-direction: row;
+}
+.featured__section-img img {
+  width: 70%;
+}
+.featured__section-text {
+  padding: 4rem 0;
+}
+.featured__section-text h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  padding: 2rem 0;
+  color: var(--text-color);
+}
+.featured__section-text p {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  font-weight: 500;
+}
+.featured__section-text a {
+  display: block;
+  text-transform: capitalize;
+  width: 19.6rem;
+  height: 4.4rem;
+  padding: 1rem 2.4rem;
+  color: var(--white-color);
+  background-color: var(--btn-bg);
+}
+/* featured products section end */
+/*================ 
+main section end
+================== */
+footer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  background-color: var(--footer-bg-color);
+}
+.footer__text-box {
+  color: var(--white-color);
+}
+.footer__text-box h1 {
+  padding: 2rem 0;
+  margin: 2rem 0;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.footer__text-box p {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.footer__text-box h4 {
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin: 1rem 1rem;
+}
+.footer__icon-box a {
+  font-size: 2.4rem;
+  color: var(--white-color);
+  margin: 2rem 1rem;
 }
